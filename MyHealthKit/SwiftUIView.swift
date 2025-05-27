@@ -14,27 +14,6 @@ struct SwiftUIView: View {
         NavigationStack {
             NavigationLink("Go to Detail", destination: Text("Detail View"))
         }
-
-//        VStack {
-//
-//            HStack {
-//                Text("Left")
-//                    .padding()
-//                     .background(Color.white)
-//                     .border(Color.gray)
-//                     .shadow(radius: 5)
-//                Spacer()
-//                Text("Right")
-//            }
-//            .padding()
-//            
-//            VStack {
-//                Text("Section 1")
-//                Divider()
-//                Text("Section 2")
-//            }
-//            .padding()
-//        }
     }
 }
 
