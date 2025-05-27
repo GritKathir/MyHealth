@@ -9,7 +9,7 @@ import SwiftUI
 struct HealthDashboardView: View {
     @StateObject private var healthKitManager = HealthKitManager()
 
-    var body: some View {   
+    var body: some View {
         let columns = [GridItem(.flexible()), GridItem(.flexible())]
         ScrollView {
             Image(systemName: "person.crop.circle.fill")
