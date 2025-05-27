@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>We use your health data to track and update wellness goals like steps and calories.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>We access your health data to personalize insights and provide progress tracking features.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
