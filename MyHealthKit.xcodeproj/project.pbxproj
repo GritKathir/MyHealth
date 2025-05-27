@@ -414,7 +414,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyHealthKit/Info.plist;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "We access your health data to personalize insights and provide progress tracking features.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We read health data to personalize your wellness insights and daily progress.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We use your health data to track and update wellness goals like steps and calories.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -446,7 +447,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyHealthKit/Info.plist;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "We access your health data to personalize insights and provide progress tracking features.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We read health data to personalize your wellness insights and daily progress.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We use your health data to track and update wellness goals like steps and calories.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
