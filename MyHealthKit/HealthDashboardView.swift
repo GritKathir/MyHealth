@@ -19,14 +19,14 @@ struct HealthDashboardView: View {
             
             LazyVGrid(columns: columns, spacing: 16) {
                 healthMetricCard(icon: "❤️", value: "\(String(format: "%.1f", healthKitManager.heartRate)) bpm", label: "Heart Rate")
-                healthMetricCard(icon: "📉", value: "\(String(format: "%.1f", healthKitManager.hrv)) ms", label: "HRV")
+                healthMetricCard(icon: "📊", value: "\(String(format: "%.1f", healthKitManager.hrv)) ms", label: "HRV")
                 healthMetricCard(icon: "🫁", value: "\(String(format: "%.1f", healthKitManager.spo2 * 100))%", label: "SpO₂")
                 healthMetricCard(icon: "🔥", value: "\(String(format: "%.0f", healthKitManager.activeEnergy)) kcal", label: "Active Energy")
                 healthMetricCard(icon: "🧍‍♂️", value: "\(healthKitManager.standHours) hrs", label: "Stand Hours")
                 healthMetricCard(icon: "👣", value: "\(healthKitManager.steps)", label: "Steps")
                 healthMetricCard(icon: "📏", value: "\(String(format: "%.2f", healthKitManager.distance / 1000)) km", label: "Distance")
                 healthMetricCard(icon: "🏃‍♂️", value: "\(String(format: "%.0f", healthKitManager.exerciseMinutes)) min", label: "Exercise")
-                healthMetricCard(icon: "🪜", value: "\(healthKitManager.flightsClimbed)", label: "Flights Climbed")
+                healthMetricCard(icon: "🪜", value: "\(healthKitManager.stairClimbed)", label: "Stairs Climbed")
                 healthMetricCard(icon: "🧘‍♀️", value: "\(String(format: "%.0f", healthKitManager.restingEnergy)) kcal", label: "Resting Energy")
                 healthMetricCard(icon: "💨", value: "\(String(format: "%.2f", healthKitManager.vo2Max)) ml/kg·min", label: "VO₂ Max")
                 healthMetricCard(icon: "🏋️‍♀️", value: "\(String(format: "%.0f", healthKitManager.workoutMinutes)) min", label: "Workouts")
@@ -34,7 +34,6 @@ struct HealthDashboardView: View {
                 healthMetricCard(icon: "🌡️", value: "\(String(format: "%.1f", healthKitManager.bodyTemperature)) °C", label: "Body Temp")
                 healthMetricCard(icon: "💤", value: "\(String(format: "%.1f", healthKitManager.restingHeartRate)) bpm", label: "Resting HR")
                 healthMetricCard(icon: "🌬️", value: "\(String(format: "%.1f", healthKitManager.respiratoryRate)) br/min", label: "Resp Rate")
-                healthMetricCard(icon: "📊", value: "\(String(format: "%.1f", healthKitManager.averageHRV)) ms", label: "Avg HRV")
             }
             .padding()
 
@@ -93,7 +92,7 @@ class MockHealthKitManager: HealthKitManager {
         self.steps = 7450
         self.distance = 5800
         self.exerciseMinutes = 45
-        self.flightsClimbed = 6
+        self.stairClimbed = 6
         self.restingEnergy = 1300
         self.vo2Max = 42.5
         self.workoutMinutes = 60

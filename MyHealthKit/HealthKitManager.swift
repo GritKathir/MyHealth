@@ -13,7 +13,7 @@ class HealthKitManager: ObservableObject {
     @Published var steps: Int = 0
     @Published var distance: Double = 0.0
     @Published var exerciseMinutes: Double = 0.0
-    @Published var flightsClimbed: Int = 0
+    @Published var stairClimbed: Int = 0
     @Published var restingEnergy: Double = 0.0
     @Published var vo2Max: Double = 0.0
     @Published var workoutMinutes: Double = 0.0
@@ -21,7 +21,7 @@ class HealthKitManager: ObservableObject {
     @Published var restingHeartRate: Double = 0.0
     @Published var respiratoryRate: Double = 0.0
     @Published var averageHRV: Double = 0.0
-    @Published var cardioRecovery: Double = 35 
+    @Published var cardioRecovery: Double = 35
 
     init() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -156,7 +156,7 @@ class HealthKitManager: ObservableObject {
                 DispatchQueue.main.async {
                     switch identifier {
                     case .stepCount: self.steps = Int(value)
-                    case .flightsClimbed: self.flightsClimbed = Int(value)
+                    case .flightsClimbed: self.stairClimbed = Int(value)
                     case .appleStandTime: self.standHours = Int(value)
                     default: break
                     }
